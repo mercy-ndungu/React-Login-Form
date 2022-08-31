@@ -1,0 +1,58 @@
+.main-holder{
+padding: 3%;
+background-color: white;
+height: 80%;
+width: 70%;
+margin-top: 4%;
+margin-left: 5%;
+}
+.nav-header {
+    color: #38a0a7;
+}
+.sign{
+    color: #38a0a7;   
+}
+.list-items{
+    display: flex;
+}
+.account{
+    margin-left: 74%;
+    margin-top: -4.5%;
+    padding-bottom: 2%;
+}
+.welcome-text{
+    color: #8b8b8b;
+}
+.input-head{
+    color: #828282;
+}
+.input{
+    width: 45%;
+    padding: 1%;
+    /* padding-bottom: ; */
+}
+.or{
+    color: #828282;
+}
+.login{
+    margin-top: -2%;
+    margin-left: 3%;
+}
+.checkbox{
+    margin-top: 2%;
+}
+.reset{
+    margin-left: 15.5%;
+}
+.log-button{
+    color: white;
+    background-color: #38a0a7;
+    padding: 1.5%;
+    border: none;
+    border-radius: 3px;
+    width: 48%;
+}
+.container{
+    margin-left: 45%;
+    margin-top: -46%;
+}
