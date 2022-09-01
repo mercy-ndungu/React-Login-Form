@@ -1,9 +1,9 @@
 import React from "react";
 import "./Form.css";
 import image from "./edishop.png";
-// import { FaFacebook } from "react-icons/fa";
-// import { FaGoogle } from "react-icons/fa";
-// import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 
 
@@ -41,16 +41,18 @@ const Form = () => {
 <p>
 </p>
 <p className="or">____________________________<span>or</span>_________________________</p>
-
-{/* <div>
+<div className="icon-group">
+<div className="icon">
   <FaFacebook/>
 </div>
-<div>
+<div className="icon">
   <FaGoogle/>
 </div>
-<div>
+<div className="icon">
   <FaInstagram/>
-</div> */}
+</div>
+</div>
+
 
 <div className="container">
   <img src={image} alt="imgage"/>

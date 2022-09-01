@@ -56,3 +56,17 @@ margin-left: 5%;
     margin-left: 45%;
     margin-top: -46%;
 }
+.icon-group{
+    display: flex;
+    /* margin-left: %; */
+    
+}
+.icon{
+    padding: 2%;
+    border: 2%;
+    border-color: black;
+    /* margin-left: 1%; */
+}
+.icon-group{
+margin-left: 18.5%;
+}
