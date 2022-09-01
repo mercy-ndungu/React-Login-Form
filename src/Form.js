@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect, useState}  from "react";
 import "./Form.css";
 import image from "./edishop.png";
 import { FaFacebook } from "react-icons/fa";
@@ -15,6 +15,19 @@ import { FaInstagram } from "react-icons/fa";
 
 
 const Form = () => {
+  const [email, setEmail] = useState("");
+  console.log(email);
+    const [password, setPassword] = useState("");
+const [error, setError] = useState("");
+    const [loading, setLoading] = useState(true);
+
+    const handleSubmit = () => {
+      const data = {
+        email: email,
+        password: password
+      }
+      alert(JSON.stringify(data));
+    }
        return (
 
 <div className="form">
@@ -29,14 +42,16 @@ const Form = () => {
   </nav>
 
 <h2 className="welcome-text">Welcome Back</h2>
-   <form className="form">
+   <form className="form" onSubmit={handleSubmit}>
    <p className="input-head"> Your Email</p>
-   <input type="text" className="input" name="username" id="useremail" placeholder="name@domain.com" />
+   <input type="text" className="input" name="username" id="useremail" placeholder="name@domain.com" 
+   onChange={(e) =>{setEmail(e.target.value)}} />
    <p className="input-head"> Password</p>
-  <input type="password" name="username" className="input" id="userpassword" placeholder="at least 8 characters"/> <br/>
+  <input type="password" name="username" className="input" id="userpassword" placeholder="at least 8 characters" 
+  onChange={(e) =>{setPassword(e.target.value)}}/> <br/>
   <input type="checkbox" className="checkbox"/>
   <p className="login">Keep me logged in <span className="reset"> Forgot password?</span></p>
-<button className="log-button">Login</button>
+<button className="log-button" type="submit">Login</button>
 </form>
 <p>
 </p>
